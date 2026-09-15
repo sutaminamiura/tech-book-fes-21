@@ -32,7 +32,7 @@ jobs:
       - run: npm run verify:print
 
       - name: Upload workflow artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: book-${{ github.ref_name }}
           path: dist/*.pdf
