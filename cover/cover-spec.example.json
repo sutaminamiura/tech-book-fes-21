@@ -1,0 +1,14 @@
+{
+  "trim": {
+    "widthMm": 148,
+    "heightMm": 210
+  },
+  "bleedMm": 3,
+  "binding": "perfect-binding",
+  "readingDirection": "left-to-right",
+  "pageCount": null,
+  "paper": null,
+  "spineWidthMm": null,
+  "printerTemplate": null,
+  "notes": "Set page count, paper, spine width, and printer template only after choosing the printer. The cover PDF is separate from the body PDF."
+}

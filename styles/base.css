@@ -1,0 +1,72 @@
+:root {
+  font-family: "Noto Serif JP", serif;
+  font-size: 9pt;
+  line-height: 1.8;
+  orphans: 2;
+  widows: 2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figcaption,
+caption {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+h1 {
+  string-set: chapter-title content();
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: "Source Code Pro", monospace;
+}
+
+pre {
+  font-size: 7.5pt;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  break-inside: avoid;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+figure,
+table,
+blockquote {
+  break-inside: avoid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8pt;
+}
+
+th,
+td {
+  padding: 1.5mm 2mm;
+  vertical-align: top;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+}

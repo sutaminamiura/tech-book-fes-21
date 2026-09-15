@@ -1,0 +1,20 @@
+@page {
+  size: A5;
+  margin: 15mm 15mm 18mm;
+
+  @bottom-center {
+    content: counter(page);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 7.5pt;
+  }
+}
+
+a {
+  color: #145da0;
+}
+
+pre {
+  background: #f4f6f8;
+  border-left: 1mm solid #8a98a8;
+  padding: 3mm;
+}

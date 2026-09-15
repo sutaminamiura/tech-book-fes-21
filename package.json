@@ -1,0 +1,30 @@
+{
+  "name": "techbook-vivliostyle",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "npm run build:ebook",
+    "build:ebook": "node scripts/build.mjs ebook",
+    "build:print:draft": "node scripts/build.mjs print-draft",
+    "build:print": "node scripts/build.mjs print",
+    "preview": "vivliostyle preview --config vivliostyle.ebook.config.js",
+    "check": "npm run check:format && npm run check:project",
+    "check:format": "prettier --check .",
+    "check:project": "node scripts/validate-project.mjs",
+    "format": "prettier --write .",
+    "verify:ebook": "bash scripts/check-pdf.sh dist/book-ebook.pdf ebook",
+    "verify:print": "bash scripts/check-pdf.sh dist/book-print.pdf print"
+  },
+  "devDependencies": {
+    "@fontsource/noto-sans-jp": "5.3.0",
+    "@fontsource/noto-serif-jp": "5.3.0",
+    "@fontsource/source-code-pro": "5.3.0",
+    "@vivliostyle/cli": "11.3.3",
+    "@vivliostyle/theme-techbook": "3.0.0",
+    "prettier": "3.9.6"
+  }
+}

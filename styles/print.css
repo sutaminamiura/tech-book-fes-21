@@ -1,0 +1,60 @@
+@page {
+  size: A5;
+  bleed: 3mm;
+  marks: crop cross;
+}
+
+@page :left {
+  margin: 16mm 20mm 18mm 15mm;
+
+  @top-left {
+    content: string(chapter-title);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 7pt;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-center {
+    content: counter(page);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 7.5pt;
+  }
+}
+
+@page :right {
+  margin: 16mm 15mm 18mm 20mm;
+
+  @top-right {
+    content: string(chapter-title);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 7pt;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+
+  @bottom-center {
+    content: counter(page);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 7.5pt;
+  }
+}
+
+html,
+body {
+  color: #000;
+  background: #fff;
+}
+
+pre {
+  border: 0.2mm solid #777;
+  padding: 3mm;
+}
+
+a {
+  text-decoration-style: dotted;
+}
